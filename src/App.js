@@ -1,5 +1,6 @@
   import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
@@ -9,18 +10,21 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h1>Sangeetha</h1>
-        <button>Add updated</button>
-        <button>Add button 2</button>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+     <section>
+       <nav>
+         <ul>
+         <li> <Link to="/Home">Home</Link></li>
+         <li> <Link to="/Movie">Movies</Link></li>
+          <li> <Link to="/About">About pages Link</Link></li>
+         </ul>
+       </nav>
+     </section>
       </header>
+      <Switch>
+        <Route path="/Movie">Movie pages</Route>
+        <Route path="/About">About pages</Route>
+        <Route path="/">Welcome to the pages</Route>
+        </Switch>
     </div>
   );
 }
