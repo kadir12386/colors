@@ -16,6 +16,7 @@ function App() {
          <li> <Link to="/Home">Home</Link></li>
          <li> <Link to="/Movie">Movies</Link></li>
           <li> <Link to="/About">About pages Link</Link></li>
+             <li> <Link to="/About">About pages Link</New></li>
          </ul>
        </nav>
      </section>
